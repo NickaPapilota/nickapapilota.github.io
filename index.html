@@ -16,6 +16,10 @@
     h1, h2, h3 {
       font-family: 'Playfair Display', serif;
     }
+    .nav-link:hover {
+  color: #ffc107 !important; 
+  text-decoration: underline;
+    }
     .hero {
       padding: 4rem 2rem;
       background-color: #343a40;
@@ -76,6 +80,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
+           <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link active" href="#about">About Me</a>
           </li>
@@ -91,7 +98,7 @@
   </nav>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero" id="home">
     <h1>Hi, I'm Nicka Marie Q. Papilota</h1>
     <p class="lead">Welcome to my personal e-portfolio. All of my works in the Media and Information Literacy (MIL) subject will be showcased here.</p>
   </section>
