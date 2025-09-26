@@ -130,8 +130,10 @@
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
-    function toggleMusic() {
-    const music = document.getElementById("bg-music");
+  const music = document.getElementById("bg-music");
+
+  // Only auto start on first caption click
+  function toggleMusic() {
     if (music.paused) {
       music.play().catch(err => console.log("Autoplay blocked:", err));
     } else {
