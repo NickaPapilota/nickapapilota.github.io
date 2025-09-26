@@ -43,6 +43,27 @@
       text-align: center;
       margin-top: 2rem;
     }
+    .caption {
+  font-family: "Impact", "Anton", sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #111;
+  margin: 20px 0;
+}
+
+.caption .highlight {
+  color: #c8102e; /* deep red for TRILYON */
+  font-weight: bold;
+}
+
+.caption .emphasis {
+  font-style: italic;
+  font-weight: bold;
+  color: #222;
+  background: #ffeaea; /* soft red highlight */
+  padding: 2px 4px;
+  border-radius: 4px;
+}
   </style>
 </head>
 
@@ -83,9 +104,12 @@
   <section class="container">
     <div class="blog-post">
       <img src="Typog.png" alt="Typog photo" class="img-fluid w-100 mb-3 rounded">
-      <p>“Hindi lang bilyon kundi trilyon ang ninakaw!</p>
-      <p>Hanggang kailan tayo dadayain ng mga substandard na proyekto?</p>
-      <p>Ngayon, gising na ang mamamayan—handa nang singilin ang mga mandurugas!”</p>
+        <div class="caption">
+          <p>“Hindi lang bilyon, kundi <span class="highlight">trilyon</span> ang ninakaw mula sa ating bulsa!</p>
+          <p>Hanggang kailan tayo dadayain ng mga substandard na proyekto?</p>
+          <p>Hanggang kailan tayo magbubulag-bulagan sa kanilang ginagawa?</p>
+          <p>Ngayon, gising na ang mamamayan—<span class="emphasis">handa nang singilin ang mga mandurugas!</span>”</p>
+        </div>
 
       <a href="index.html#blog" class="btn btn-outline-secondary mt-3">⬅️ Back to Blog</a>
     </div>
