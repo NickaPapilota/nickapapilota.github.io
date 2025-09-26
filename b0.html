@@ -100,11 +100,18 @@
     <h1>Typography Poster Design</h1>
     <p class="lead">Posted on September 26, 2025 by Nicka Marie Q. Papilota (STEM 12-B)</p>
   </section>
+  
+  <!-- Hidden background music -->
+    <audio id="bg-music" loop>
+      <source src="your-music.mp3" type="audio/mpeg">
+    </audio>
 
   <!-- Blog Content -->
   <section class="container">
     <div class="blog-post">
-      <img src="Typog.png" alt="Typog photo" class="img-fluid w-100 mb-3 rounded">
+     <a href="#" onclick="playMusic(); return false;">
+        <img src="Typog.png" alt="Typog photo" class="img-fluid w-100 mb-3 rounded">
+      </a>
         <div class="caption">
           <p>“Hindi lang bilyon, kundi <span class="highlight">trilyon</span> ang ninakaw mula sa ating bulsa!</p>
           <p>Hanggang kailan tayo dadayain ng mga substandard na proyekto?</p>
@@ -122,6 +129,14 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function playMusic() {
+      const music = document.getElementById("bg-music");
+      if (music.paused) {
+        music.play();
+      }
+    }
+  </script>
 </body>
 
 </html>
