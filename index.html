@@ -256,10 +256,12 @@ function toggleText() {
     moreText.style.display = "inline";
   }
 }
+   const music = document.getElementById("bg-music");
+
+  // Only auto start on first caption click
   function toggleMusic() {
-    const music = document.getElementById("bg-music");
     if (music.paused) {
-      music.play();
+      music.play().catch(err => console.log("Autoplay blocked:", err));
     } else {
       music.pause();
     }
@@ -268,6 +270,7 @@ function toggleText() {
 </body>
 
 </html>
+
 
 
 
