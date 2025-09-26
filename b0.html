@@ -112,7 +112,7 @@
      <a href="#" onclick="toggleMusic(); return false;">
         <img src="Typog.png" alt="Typog photo" class="img-fluid w-100 mb-3 rounded">
       </a>
-        <div class="caption">
+        <div class="caption" onclick="toggleMusic()" style="cursor:pointer;">
           <p>“Hindi lang bilyon, kundi <span class="highlight">trilyon</span> ang ninakaw mula sa ating bulsa!</p>
           <p>Hanggang kailan tayo dadayain ng mga substandard na proyekto?</p>
           <p>Hanggang kailan tayo magbubulag-bulagan sa kanilang ginagawa?</p>
@@ -138,11 +138,7 @@
       music.pause();
     }
   }
-   window.addEventListener("DOMContentLoaded", () => {
-    const music = document.getElementById("bg-music");
-    music.play().catch(err => console.log("Autoplay blocked until user interacts:", err));
-  });
-  </script>
+    </script>
 </body>
 
 </html>
