@@ -256,16 +256,19 @@ function toggleText() {
     moreText.style.display = "inline";
   }
 }
-  function playMusic() {
+  function toggleMusic() {
     const music = document.getElementById("bg-music");
     if (music.paused) {
       music.play();
+    } else {
+      music.pause();
     }
   }
 </script>
 </body>
 
 </html>
+
 
 
 
