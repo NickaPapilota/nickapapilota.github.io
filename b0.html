@@ -133,11 +133,15 @@
     function toggleMusic() {
     const music = document.getElementById("bg-music");
     if (music.paused) {
-      music.play();
+      music.play().catch(err => console.log("Autoplay blocked:", err));
     } else {
       music.pause();
     }
   }
+   window.addEventListener("DOMContentLoaded", () => {
+    const music = document.getElementById("bg-music");
+    music.play().catch(err => console.log("Autoplay blocked until user interacts:", err));
+  });
   </script>
 </body>
 
