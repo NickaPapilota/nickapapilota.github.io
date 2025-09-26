@@ -266,10 +266,28 @@ function toggleText() {
       music.pause();
     }
   }
+    // Restore music time across pages
+  window.addEventListener("DOMContentLoaded", () => {
+    const savedTime = localStorage.getItem("musicTime");
+    if (savedTime) {
+      music.currentTime = parseFloat(savedTime);
+    }
+    const wasPlaying = localStorage.getItem("musicPlaying");
+    if (wasPlaying === "true") {
+      music.play().catch(err => console.log("Autoplay blocked until click:", err));
+    }
+  });
+
+  // Save state before leaving
+  window.addEventListener("beforeunload", () => {
+    localStorage.setItem("musicTime", music.currentTime);
+    localStorage.setItem("musicPlaying", !music.paused);
+  });
 </script>
 </body>
 
 </html>
+
 
 
 
