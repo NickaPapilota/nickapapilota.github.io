@@ -83,7 +83,7 @@
   <section class="container">
     <div class="blog-post">
       <img src="Eco.png" alt="Eco photo" class="img-fluid w-100 mb-3 rounded">
-      <p>This prototype is designed to fight air pollution by scanning and purifying the air, reducing harmful greenhouse gases, and ensuring healthier breathing spaces. It aims to lessen the impacts of polluted air on human health while promoting a cleaner and more sustainable future.</p>
+      <p>This poster reveals how easily we can fall into online traps, and emphasizes that thinking before we click helps us stay safe from digital risks.</p>
 
       <a href="index.html#blog" class="btn btn-outline-secondary mt-3">⬅️ Back to Blog</a>
     </div>
